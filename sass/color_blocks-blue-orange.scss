@@ -1,0 +1,135 @@
+// Set The Color
+
+$mainColor: #f39616;
+
+$secondaryColor: #1263c7;
+
+//caculate base colors
+$borderColor: mix($mainColor, #cdcdcd);
+
+body {
+    font: {
+    family: Arial;
+    size: 1rem;
+    weight: 100;
+    }
+    background-color: #cdcdcd;
+}
+
+
+// mixins
+
+// set up block styles
+@mixin block {
+    background-color: $mainColor;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    display: block;
+    float: left;
+    border: 3px $borderColor solid;
+}
+
+// setup mixin to lighten color and set background color
+@mixin colorBlocks($backgroundColor: $mainColor, $lighten: 1) {
+    background-color: $backgroundColor + $lighten;
+}
+
+// set mixin for inverted color on hover
+@mixin colorBlocksHover($backgroundColor: $secondaryColor, $lighten: 1) {
+    background-color: $backgroundColor + $lighten;
+}
+
+.colorBlock{
+  @include block;
+}
+
+.colorBlock.first {
+    float: none;
+
+}
+
+
+#colorBlocks1 {
+     @for $i from 1 through 8 {
+         & div:nth-child(#{$i}) {
+             @include colorBlocks($mainColor - 100, $i * 10 );
+        }
+    }
+    @for $i from 1 through 8 {
+        & div:nth-child(#{$i}):hover {
+            @include colorBlocksHover($secondaryColor - 100, $i * 10 );
+        }
+    }
+}
+
+#colorBlocks2 {
+     @for $i from 1 through 8 {
+         & div:nth-child(#{$i}) {
+             @include colorBlocks($mainColor - 50, $i * 10 );
+        }
+    }
+    @for $i from 1 through 8 {
+        & div:nth-child(#{$i}):hover {
+            @include colorBlocksHover($secondaryColor - 50, $i * 10 );
+        }
+    }
+}
+
+
+#colorBlocks {
+    @for $i from 1 through 8 {
+         & div:nth-child(#{$i}) {
+             @include colorBlocks($mainColor, $i * 10 );
+        }
+    }
+    @for $i from 1 through 8 {
+        & div:nth-child(#{$i}):hover {
+            @include colorBlocksHover($secondaryColor, $i * 10 );
+        }
+    }
+}
+
+#colorBlocks3 {
+     @for $i from 1 through 8 {
+         & div:nth-child(#{$i}) {
+             @include colorBlocks($mainColor + 50, $i * 10 );
+        }
+    }
+    @for $i from 1 through 8 {
+        & div:nth-child(#{$i}):hover {
+            @include colorBlocksHover($secondaryColor + 50, $i * 10 );
+        }
+    }
+}
+
+#colorBlocks4 {
+     @for $i from 1 through 8 {
+         & div:nth-child(#{$i}) {
+             @include colorBlocks($mainColor + 100, $i * 10 );
+        }
+    }
+    @for $i from 1 through 8 {
+        & div:nth-child(#{$i}):hover {
+            @include colorBlocksHover($secondaryColor + 100, $i * 10 );
+        }
+    }
+}
+
+#colorBlocks5 {
+     @for $i from 1 through 8 {
+         & div:nth-child(#{$i}) {
+             @include colorBlocks($mainColor + 150, $i * 10 );
+        }
+    }
+    @for $i from 1 through 8 {
+        & div:nth-child(#{$i}):hover {
+            @include colorBlocksHover($secondaryColor + 150, $i * 10 );
+        }
+    }
+}
+
+
+
+
+

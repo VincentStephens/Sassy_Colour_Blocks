@@ -1,0 +1,258 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/utilities";
+
+// provide base of 10 for rem (root em) measurment (content / context )
+//html { font-size: 10px; }
+
+
+//property nesting
+body {
+    font: {
+    family: Arial;
+    size: 1rem;
+    weight: 100;
+    }
+}
+
+.images {
+    position: relative;
+    display: block;
+}
+img[src$=".jpg"] {
+    border: solid 1px white;
+}
+img[src$=".jpg"]:hover {
+    border: solid 1px red;
+}
+
+.b {
+    display: none;
+    position: absolute;
+}
+.a {
+    position: absolute;
+}
+.a:hover + .b {
+    display: block;
+}
+
+
+.headingSelector > h1 {
+    color: green;
+}
+
+.headingSelector > div h1 {
+    color: blue;
+}
+
+.headingSelector2 p + h1 {
+    color: orange;
+}
+
+h2:target {
+    background-color: yellow;
+}
+
+
+//Variables DRY - dont repeat your self
+$mainColor: green;
+$documentSize: 114rem;
+$sidebarTop: 5rem;
+$sidebarBottom: 8rem; 
+
+// Maths
+
+$sidebarHeight: $sidebarBottom + $sidebarTop;
+
+.sidebar {
+    padding: 1rem;
+    background-color: $mainColor;
+    width: 250px;
+    
+    height: $sidebarHeight;
+    .sidebarTop {
+    height: $sidebarTop;
+    background-color: lighten($mainColor, 10);
+    }
+    .sidebarBottom {
+    height: $sidebarBottom;
+    background-color: lighten($mainColor, 20);
+    }
+}
+
+// mixins
+$mainColor: green;
+
+@mixin block {
+    background-color: $mainColor;
+    height: 100px;
+    width: 200px;
+    border: solid 1px black;
+}
+
+.block1 {
+    @include block;
+}
+
+// Operators
+$myColor: red;
+$mainBorderSize: 5px;
+
+.block2 {
+    @include block;
+    background-color: $myColor;
+    border: ($mainBorderSize + 10)/2 gray solid;
+}
+
+.block3 {
+    @include block;
+    background-color: $myColor + blue;
+    border: ($mainBorderSize + 10)/2 gray solid;
+}
+
+$gender: girl;
+$genderColor: if($gender == "boy", blue, pink);
+.block4 {
+    @include block; 
+    background-color: gray;
+    color: $genderColor;
+}
+
+//mixins with arguments
+@mixin customBorder($width, $color, $style) {
+    border: {
+        width: $width;
+        color: $color;
+        style: $style;
+    }
+}
+
+.block5 {
+    height: 100px;
+    width: 200px;
+    @include customBorder(20px, red, solid);
+}
+
+@mixin paragraphStyles($size, $color, $lineHeight) {
+    font: {
+        size: $size;
+        color: $color;
+        line-height: $lineHeight;
+    }
+    &:first-letter {
+        font-size: ($size + 4);
+        color: darken($color, 1);
+    }
+}
+
+.block6 {
+    height: auto;
+    width: 500px;
+    @include customBorder(20px, red, solid);
+    p {
+        @include paragraphStyles(1em, blue, 1.3em);
+    }
+}
+
+// mixin with default values
+@mixin paragraphStyles2($size: 1em, $color: orange, $lineHeight: 1em) {
+    font: {
+        size: $size;
+        color: $color;
+        line-height: $lineHeight;
+    }
+    &:first-letter {
+        font-size: ($size + 4);
+        color: darken($color, 20);
+    }
+}
+
+.block7 {
+    height: auto;
+    width: 500px;
+    @include customBorder(20px, red, solid);
+    p {
+        @include paragraphStyles2;
+    }
+}
+
+// functions
+
+body{background-color: #c1c1c1;}
+
+@mixin blockColor($mainColor: green) {
+    background-color: rgba($mainColor, 0.5);
+    height: 100px;
+    width: 200px;
+    border: solid 1px black;
+}
+
+.block8 {
+    @include blockColor(orange);
+    
+}
+
+// - color blocks with css
+
+@mixin colorBlocks($backgroundColor: green, $lighten: 1) {
+    background-color: $backgroundColor + $lighten;
+}
+
+$borderColor: gray;
+
+.colorBlock{
+    height: 100px;
+    width: 100px;
+    display: block;
+    float: left;
+    border: 3px $borderColor solid;
+}
+
+
+#colorBlocks {
+    @for $i from 1 through 8 {
+        & div:nth-child(#{$i}) {
+            @include colorBlocks(green, $i * 10 );
+        }
+    }
+}
+
+@mixin colorBlocksHover($backgroundColor: green, $lighten: 1) {
+    background-color: invert($backgroundColor) + $lighten;
+}
+
+
+#colorBlocks2 {
+    // @for $i from 1 through 8 {
+    //     & div:nth-child(#{$i}) {
+    //         @include colorBlocks(green, $i * 10 );
+    //     }
+    // }
+    @for $i from 1 through 8 {
+        & div:nth-child(#{$i}):hover {
+            @include colorBlocksHover(green, $i * 10 );
+        }
+    }
+}
+
+#colorBlocks3 {
+    @for $i from 1 through 8 {
+        & div:nth-child(#{$i}) {
+            @include colorBlocks(yellow, $i * 10 );
+        }
+    }
+    @for $i from 1 through 8 {
+        & div:nth-child(#{$i}):hover {
+            @include colorBlocksHover(yellow, $i * 10 );
+        }
+    }
+}
+
+
+
