@@ -1,0 +1,118 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+// provide base of 10 for rem (root em) measurment (content / context )
+//html { font-size: 10px; }
+
+
+//property nesting
+body {
+    font: {
+    family: Arial;
+    size: 1rem;
+    weight: 100;
+    }
+    background-color: #cdcdcd;
+}
+
+//Variables DRY - dont repeat your self
+$mainColor: green;
+$borderColor: gray;
+
+// mixins
+
+@mixin block {
+    background-color: $mainColor;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    display: block;
+    float: left;
+    border: 3px $borderColor solid;
+}
+
+@mixin colorBlocks($backgroundColor: green, $lighten: 1) {
+    background-color: $backgroundColor + $lighten;
+}
+// - color blocks with css
+
+@mixin colorBlocksHover($backgroundColor: green, $lighten: 1) {
+    background-color: invert($backgroundColor) + $lighten;
+}
+
+.colorBlock{
+  @include block;
+}
+
+
+#colorBlocks {
+    @for $i from 1 through 8 {
+         & div:nth-child(#{$i}) {
+             @include colorBlocks(red, $i * 10 );
+        }
+    }
+    @for $i from 1 through 8 {
+        & div:nth-child(#{$i}):hover {
+            @include colorBlocksHover(red, $i * 10 );
+        }
+    }
+}
+
+
+
+#colorBlocks2 {
+     @for $i from 1 through 8 {
+         & div:nth-child(#{$i}) {
+             @include colorBlocks(green, $i * 10 );
+        }
+    }
+    @for $i from 1 through 8 {
+        & div:nth-child(#{$i}):hover {
+            @include colorBlocksHover(green, $i * 10 );
+        }
+    }
+}
+
+#colorBlocks3 {
+    @for $i from 1 through 8 {
+        & div:nth-child(#{$i}) {
+            @include colorBlocks(blue, $i * 10 );
+        }
+    }
+    @for $i from 1 through 8 {
+        & div:nth-child(#{$i}):hover {
+            @include colorBlocksHover(blue, $i * 10 );
+        }
+    }
+}
+
+#colorBlocks4 {
+    @for $i from 1 through 8 {
+        & div:nth-child(#{$i}) {
+            @include colorBlocks(gray, $i * 10 );
+        }
+    }
+    @for $i from 1 through 8 {
+        & div:nth-child(#{$i}):hover {
+            @include colorBlocksHover(white, $i * 10 );
+        }
+    }
+}
+
+#colorBlocks5 {
+    @for $i from 1 through 8 {
+        & div:nth-child(#{$i}) {
+            @include colorBlocks(purple, $i * 10 );
+        }
+    }
+    @for $i from 1 through 8 {
+        & div:nth-child(#{$i}):hover {
+            @include colorBlocksHover(purple, $i * 10 );
+        }
+    }
+}
+
+
+

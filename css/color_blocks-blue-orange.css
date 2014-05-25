@@ -1,0 +1,413 @@
+/* line 10, ../sass/color_blocks-blue-orange.scss */
+body {
+  font-family: Arial;
+  font-size: 1rem;
+  font-weight: 100;
+  background-color: #cdcdcd;
+}
+
+/* line 43, ../sass/color_blocks-blue-orange.scss */
+.colorBlock {
+  background-color: #f39616;
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  display: block;
+  float: left;
+  border: 3px #e0b171 solid;
+}
+
+/* line 47, ../sass/color_blocks-blue-orange.scss */
+.colorBlock.first {
+  float: none;
+}
+
+/* line 55, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks1 div:nth-child(1) {
+  background-color: #993c0a;
+}
+/* line 55, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks1 div:nth-child(2) {
+  background-color: #a34614;
+}
+/* line 55, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks1 div:nth-child(3) {
+  background-color: #ad501e;
+}
+/* line 55, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks1 div:nth-child(4) {
+  background-color: #b75a28;
+}
+/* line 55, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks1 div:nth-child(5) {
+  background-color: #c16432;
+}
+/* line 55, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks1 div:nth-child(6) {
+  background-color: #cb6e3c;
+}
+/* line 55, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks1 div:nth-child(7) {
+  background-color: #d57846;
+}
+/* line 55, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks1 div:nth-child(8) {
+  background-color: #df8250;
+}
+/* line 60, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks1 div:nth-child(1):hover {
+  background-color: #0a0a6d;
+}
+/* line 60, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks1 div:nth-child(2):hover {
+  background-color: #141477;
+}
+/* line 60, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks1 div:nth-child(3):hover {
+  background-color: #1e1e81;
+}
+/* line 60, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks1 div:nth-child(4):hover {
+  background-color: #28288b;
+}
+/* line 60, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks1 div:nth-child(5):hover {
+  background-color: #323295;
+}
+/* line 60, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks1 div:nth-child(6):hover {
+  background-color: #3c3c9f;
+}
+/* line 60, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks1 div:nth-child(7):hover {
+  background-color: #4646a9;
+}
+/* line 60, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks1 div:nth-child(8):hover {
+  background-color: #5050b3;
+}
+
+/* line 68, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks2 div:nth-child(1) {
+  background-color: #cb6e0a;
+}
+/* line 68, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks2 div:nth-child(2) {
+  background-color: #d57814;
+}
+/* line 68, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks2 div:nth-child(3) {
+  background-color: #df821e;
+}
+/* line 68, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks2 div:nth-child(4) {
+  background-color: #e98c28;
+}
+/* line 68, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks2 div:nth-child(5) {
+  background-color: #f39632;
+}
+/* line 68, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks2 div:nth-child(6) {
+  background-color: #fda03c;
+}
+/* line 68, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks2 div:nth-child(7) {
+  background-color: #ffaa46;
+}
+/* line 68, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks2 div:nth-child(8) {
+  background-color: #ffb450;
+}
+/* line 73, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks2 div:nth-child(1):hover {
+  background-color: #0a3b9f;
+}
+/* line 73, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks2 div:nth-child(2):hover {
+  background-color: #1445a9;
+}
+/* line 73, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks2 div:nth-child(3):hover {
+  background-color: #1e4fb3;
+}
+/* line 73, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks2 div:nth-child(4):hover {
+  background-color: #2859bd;
+}
+/* line 73, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks2 div:nth-child(5):hover {
+  background-color: #3263c7;
+}
+/* line 73, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks2 div:nth-child(6):hover {
+  background-color: #3c6dd1;
+}
+/* line 73, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks2 div:nth-child(7):hover {
+  background-color: #4677db;
+}
+/* line 73, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks2 div:nth-child(8):hover {
+  background-color: #5081e5;
+}
+
+/* line 82, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks div:nth-child(1) {
+  background-color: #fda020;
+}
+/* line 82, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks div:nth-child(2) {
+  background-color: #ffaa2a;
+}
+/* line 82, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks div:nth-child(3) {
+  background-color: #ffb434;
+}
+/* line 82, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks div:nth-child(4) {
+  background-color: #ffbe3e;
+}
+/* line 82, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks div:nth-child(5) {
+  background-color: #ffc848;
+}
+/* line 82, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks div:nth-child(6) {
+  background-color: #ffd252;
+}
+/* line 82, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks div:nth-child(7) {
+  background-color: #ffdc5c;
+}
+/* line 82, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks div:nth-child(8) {
+  background-color: #ffe666;
+}
+/* line 87, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks div:nth-child(1):hover {
+  background-color: #1c6dd1;
+}
+/* line 87, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks div:nth-child(2):hover {
+  background-color: #2677db;
+}
+/* line 87, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks div:nth-child(3):hover {
+  background-color: #3081e5;
+}
+/* line 87, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks div:nth-child(4):hover {
+  background-color: #3a8bef;
+}
+/* line 87, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks div:nth-child(5):hover {
+  background-color: #4495f9;
+}
+/* line 87, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks div:nth-child(6):hover {
+  background-color: #4e9fff;
+}
+/* line 87, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks div:nth-child(7):hover {
+  background-color: #58a9ff;
+}
+/* line 87, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks div:nth-child(8):hover {
+  background-color: #62b3ff;
+}
+
+/* line 95, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks3 div:nth-child(1) {
+  background-color: #ffd252;
+}
+/* line 95, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks3 div:nth-child(2) {
+  background-color: #ffdc5c;
+}
+/* line 95, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks3 div:nth-child(3) {
+  background-color: #ffe666;
+}
+/* line 95, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks3 div:nth-child(4) {
+  background-color: #fff070;
+}
+/* line 95, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks3 div:nth-child(5) {
+  background-color: #fffa7a;
+}
+/* line 95, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks3 div:nth-child(6) {
+  background-color: #ffff84;
+}
+/* line 95, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks3 div:nth-child(7) {
+  background-color: #ffff8e;
+}
+/* line 95, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks3 div:nth-child(8) {
+  background-color: #ffff98;
+}
+/* line 100, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks3 div:nth-child(1):hover {
+  background-color: #4e9fff;
+}
+/* line 100, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks3 div:nth-child(2):hover {
+  background-color: #58a9ff;
+}
+/* line 100, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks3 div:nth-child(3):hover {
+  background-color: #62b3ff;
+}
+/* line 100, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks3 div:nth-child(4):hover {
+  background-color: #6cbdff;
+}
+/* line 100, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks3 div:nth-child(5):hover {
+  background-color: #76c7ff;
+}
+/* line 100, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks3 div:nth-child(6):hover {
+  background-color: #80d1ff;
+}
+/* line 100, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks3 div:nth-child(7):hover {
+  background-color: #8adbff;
+}
+/* line 100, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks3 div:nth-child(8):hover {
+  background-color: #94e5ff;
+}
+
+/* line 108, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks4 div:nth-child(1) {
+  background-color: #ffff84;
+}
+/* line 108, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks4 div:nth-child(2) {
+  background-color: #ffff8e;
+}
+/* line 108, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks4 div:nth-child(3) {
+  background-color: #ffff98;
+}
+/* line 108, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks4 div:nth-child(4) {
+  background-color: #ffffa2;
+}
+/* line 108, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks4 div:nth-child(5) {
+  background-color: #ffffac;
+}
+/* line 108, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks4 div:nth-child(6) {
+  background-color: #ffffb6;
+}
+/* line 108, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks4 div:nth-child(7) {
+  background-color: #ffffc0;
+}
+/* line 108, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks4 div:nth-child(8) {
+  background-color: #ffffca;
+}
+/* line 113, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks4 div:nth-child(1):hover {
+  background-color: #80d1ff;
+}
+/* line 113, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks4 div:nth-child(2):hover {
+  background-color: #8adbff;
+}
+/* line 113, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks4 div:nth-child(3):hover {
+  background-color: #94e5ff;
+}
+/* line 113, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks4 div:nth-child(4):hover {
+  background-color: #9eefff;
+}
+/* line 113, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks4 div:nth-child(5):hover {
+  background-color: #a8f9ff;
+}
+/* line 113, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks4 div:nth-child(6):hover {
+  background-color: #b2ffff;
+}
+/* line 113, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks4 div:nth-child(7):hover {
+  background-color: #bcffff;
+}
+/* line 113, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks4 div:nth-child(8):hover {
+  background-color: #c6ffff;
+}
+
+/* line 121, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks5 div:nth-child(1) {
+  background-color: #ffffb6;
+}
+/* line 121, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks5 div:nth-child(2) {
+  background-color: #ffffc0;
+}
+/* line 121, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks5 div:nth-child(3) {
+  background-color: #ffffca;
+}
+/* line 121, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks5 div:nth-child(4) {
+  background-color: #ffffd4;
+}
+/* line 121, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks5 div:nth-child(5) {
+  background-color: #ffffde;
+}
+/* line 121, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks5 div:nth-child(6) {
+  background-color: #ffffe8;
+}
+/* line 121, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks5 div:nth-child(7) {
+  background-color: #fffff2;
+}
+/* line 121, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks5 div:nth-child(8) {
+  background-color: #fffffc;
+}
+/* line 126, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks5 div:nth-child(1):hover {
+  background-color: #b2ffff;
+}
+/* line 126, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks5 div:nth-child(2):hover {
+  background-color: #bcffff;
+}
+/* line 126, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks5 div:nth-child(3):hover {
+  background-color: #c6ffff;
+}
+/* line 126, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks5 div:nth-child(4):hover {
+  background-color: #d0ffff;
+}
+/* line 126, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks5 div:nth-child(5):hover {
+  background-color: #daffff;
+}
+/* line 126, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks5 div:nth-child(6):hover {
+  background-color: #e4ffff;
+}
+/* line 126, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks5 div:nth-child(7):hover {
+  background-color: #eeffff;
+}
+/* line 126, ../sass/color_blocks-blue-orange.scss */
+#colorBlocks5 div:nth-child(8):hover {
+  background-color: #f8ffff;
+}

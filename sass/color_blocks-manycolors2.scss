@@ -1,0 +1,133 @@
+// Set The Color
+
+$mainColor: orange;
+
+//caculate base colors
+$borderColor: mix($mainColor, #cdcdcd);
+
+body {
+    font: {
+    family: Arial;
+    size: 1rem;
+    weight: 100;
+    }
+    background-color: #cdcdcd;
+}
+
+
+// mixins
+
+// set up block styles
+@mixin block {
+    background-color: $mainColor;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    display: block;
+    float: left;
+    border: 3px $borderColor solid;
+}
+
+// setup mixin to lighten color and set background color
+@mixin colorBlocks($backgroundColor: $mainColor, $lighten: 1) {
+    background-color: $backgroundColor + $lighten;
+}
+
+// set mixin for inverted color on hover
+@mixin colorBlocksHover($backgroundColor: $mainColor, $lighten: 1) {
+    background-color: invert($backgroundColor) + $lighten;
+}
+
+.colorBlock{
+  @include block;
+}
+
+.colorBlock.first {
+    float: none;
+
+}
+
+
+#colorBlocks1 {
+     @for $i from 1 through 8 {
+         & div:nth-child(#{$i}) {
+             @include colorBlocks( hsl(0, 1, 1), $i * 10 );
+        }
+    }
+    @for $i from 1 through 8 {
+        & div:nth-child(#{$i}):hover {
+            @include colorBlocksHover( adjust-hue($mainColor, 0), $i * 10 );
+        }
+    }
+}
+
+#colorBlocks2 {
+     @for $i from 1 through 8 {
+         & div:nth-child(#{$i}) {
+             @include colorBlocks( adjust-hue($mainColor, 60), $i * 10 );
+        }
+    }
+    @for $i from 1 through 8 {
+        & div:nth-child(#{$i}):hover {
+            @include colorBlocksHover( adjust-hue($mainColor, 60), $i * 10 );
+        }
+    }
+}
+
+
+#colorBlocks {
+    @for $i from 1 through 8 {
+         & div:nth-child(#{$i}) {
+             @include colorBlocks( adjust-hue($mainColor, 120), $i * 10 );
+        }
+    }
+    @for $i from 1 through 8 {
+        & div:nth-child(#{$i}):hover {
+            @include colorBlocksHover( adjust-hue($mainColor, 120), $i * 10 );
+        }
+    }
+}
+
+#colorBlocks3 {
+     @for $i from 1 through 8 {
+         & div:nth-child(#{$i}) {
+             @include colorBlocks( adjust-hue($mainColor, 180), $i * 10 );
+        }
+    }
+    @for $i from 1 through 8 {
+        & div:nth-child(#{$i}):hover {
+            @include colorBlocksHover( adjust-hue($mainColor, 180), $i * 10 );
+        }
+    }
+}
+
+#colorBlocks4 {
+     @for $i from 1 through 8 {
+         & div:nth-child(#{$i}) {
+             @include colorBlocks( adjust-hue($mainColor, 240), $i * 10 );
+        }
+    }
+    @for $i from 1 through 8 {
+        & div:nth-child(#{$i}):hover {
+            @include colorBlocksHover( adjust-hue($mainColor, 240), $i * 10 );
+        }
+    }
+}
+
+#colorBlocks5 {
+     @for $i from 1 through 8 {
+         & div:nth-child(#{$i}) {
+             @include colorBlocks( adjust-hue($mainColor, 300), $i * 10 );
+        }
+    }
+    @for $i from 1 through 8 {
+        & div:nth-child(#{$i}):hover {
+            @include colorBlocksHover( adjust-hue($mainColor, 300), $i * 10 );
+        }
+    }
+}
+
+
+
+
+

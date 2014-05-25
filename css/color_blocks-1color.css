@@ -1,0 +1,413 @@
+/* line 8, ../sass/color_blocks-1color.scss */
+body {
+  font-family: Arial;
+  font-size: 1rem;
+  font-weight: 100;
+  background-color: #cdcdcd;
+}
+
+/* line 41, ../sass/color_blocks-1color.scss */
+.colorBlock {
+  background-color: blue;
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  display: block;
+  float: left;
+  border: 3px #6666e6 solid;
+}
+
+/* line 45, ../sass/color_blocks-1color.scss */
+.colorBlock.first {
+  float: none;
+}
+
+/* line 53, ../sass/color_blocks-1color.scss */
+#colorBlocks1 div:nth-child(1) {
+  background-color: #0a0aa5;
+}
+/* line 53, ../sass/color_blocks-1color.scss */
+#colorBlocks1 div:nth-child(2) {
+  background-color: #1414af;
+}
+/* line 53, ../sass/color_blocks-1color.scss */
+#colorBlocks1 div:nth-child(3) {
+  background-color: #1e1eb9;
+}
+/* line 53, ../sass/color_blocks-1color.scss */
+#colorBlocks1 div:nth-child(4) {
+  background-color: #2828c3;
+}
+/* line 53, ../sass/color_blocks-1color.scss */
+#colorBlocks1 div:nth-child(5) {
+  background-color: #3232cd;
+}
+/* line 53, ../sass/color_blocks-1color.scss */
+#colorBlocks1 div:nth-child(6) {
+  background-color: #3c3cd7;
+}
+/* line 53, ../sass/color_blocks-1color.scss */
+#colorBlocks1 div:nth-child(7) {
+  background-color: #4646e1;
+}
+/* line 53, ../sass/color_blocks-1color.scss */
+#colorBlocks1 div:nth-child(8) {
+  background-color: #5050eb;
+}
+/* line 58, ../sass/color_blocks-1color.scss */
+#colorBlocks1 div:nth-child(1):hover {
+  background-color: #ffff6e;
+}
+/* line 58, ../sass/color_blocks-1color.scss */
+#colorBlocks1 div:nth-child(2):hover {
+  background-color: #ffff78;
+}
+/* line 58, ../sass/color_blocks-1color.scss */
+#colorBlocks1 div:nth-child(3):hover {
+  background-color: #ffff82;
+}
+/* line 58, ../sass/color_blocks-1color.scss */
+#colorBlocks1 div:nth-child(4):hover {
+  background-color: #ffff8c;
+}
+/* line 58, ../sass/color_blocks-1color.scss */
+#colorBlocks1 div:nth-child(5):hover {
+  background-color: #ffff96;
+}
+/* line 58, ../sass/color_blocks-1color.scss */
+#colorBlocks1 div:nth-child(6):hover {
+  background-color: #ffffa0;
+}
+/* line 58, ../sass/color_blocks-1color.scss */
+#colorBlocks1 div:nth-child(7):hover {
+  background-color: #ffffaa;
+}
+/* line 58, ../sass/color_blocks-1color.scss */
+#colorBlocks1 div:nth-child(8):hover {
+  background-color: #ffffb4;
+}
+
+/* line 66, ../sass/color_blocks-1color.scss */
+#colorBlocks2 div:nth-child(1) {
+  background-color: #0a0ad7;
+}
+/* line 66, ../sass/color_blocks-1color.scss */
+#colorBlocks2 div:nth-child(2) {
+  background-color: #1414e1;
+}
+/* line 66, ../sass/color_blocks-1color.scss */
+#colorBlocks2 div:nth-child(3) {
+  background-color: #1e1eeb;
+}
+/* line 66, ../sass/color_blocks-1color.scss */
+#colorBlocks2 div:nth-child(4) {
+  background-color: #2828f5;
+}
+/* line 66, ../sass/color_blocks-1color.scss */
+#colorBlocks2 div:nth-child(5) {
+  background-color: #3232ff;
+}
+/* line 66, ../sass/color_blocks-1color.scss */
+#colorBlocks2 div:nth-child(6) {
+  background-color: #3c3cff;
+}
+/* line 66, ../sass/color_blocks-1color.scss */
+#colorBlocks2 div:nth-child(7) {
+  background-color: #4646ff;
+}
+/* line 66, ../sass/color_blocks-1color.scss */
+#colorBlocks2 div:nth-child(8) {
+  background-color: #5050ff;
+}
+/* line 71, ../sass/color_blocks-1color.scss */
+#colorBlocks2 div:nth-child(1):hover {
+  background-color: #ffff3c;
+}
+/* line 71, ../sass/color_blocks-1color.scss */
+#colorBlocks2 div:nth-child(2):hover {
+  background-color: #ffff46;
+}
+/* line 71, ../sass/color_blocks-1color.scss */
+#colorBlocks2 div:nth-child(3):hover {
+  background-color: #ffff50;
+}
+/* line 71, ../sass/color_blocks-1color.scss */
+#colorBlocks2 div:nth-child(4):hover {
+  background-color: #ffff5a;
+}
+/* line 71, ../sass/color_blocks-1color.scss */
+#colorBlocks2 div:nth-child(5):hover {
+  background-color: #ffff64;
+}
+/* line 71, ../sass/color_blocks-1color.scss */
+#colorBlocks2 div:nth-child(6):hover {
+  background-color: #ffff6e;
+}
+/* line 71, ../sass/color_blocks-1color.scss */
+#colorBlocks2 div:nth-child(7):hover {
+  background-color: #ffff78;
+}
+/* line 71, ../sass/color_blocks-1color.scss */
+#colorBlocks2 div:nth-child(8):hover {
+  background-color: #ffff82;
+}
+
+/* line 80, ../sass/color_blocks-1color.scss */
+#colorBlocks div:nth-child(1) {
+  background-color: #0a0aff;
+}
+/* line 80, ../sass/color_blocks-1color.scss */
+#colorBlocks div:nth-child(2) {
+  background-color: #1414ff;
+}
+/* line 80, ../sass/color_blocks-1color.scss */
+#colorBlocks div:nth-child(3) {
+  background-color: #1e1eff;
+}
+/* line 80, ../sass/color_blocks-1color.scss */
+#colorBlocks div:nth-child(4) {
+  background-color: #2828ff;
+}
+/* line 80, ../sass/color_blocks-1color.scss */
+#colorBlocks div:nth-child(5) {
+  background-color: #3232ff;
+}
+/* line 80, ../sass/color_blocks-1color.scss */
+#colorBlocks div:nth-child(6) {
+  background-color: #3c3cff;
+}
+/* line 80, ../sass/color_blocks-1color.scss */
+#colorBlocks div:nth-child(7) {
+  background-color: #4646ff;
+}
+/* line 80, ../sass/color_blocks-1color.scss */
+#colorBlocks div:nth-child(8) {
+  background-color: #5050ff;
+}
+/* line 85, ../sass/color_blocks-1color.scss */
+#colorBlocks div:nth-child(1):hover {
+  background-color: #ffff0a;
+}
+/* line 85, ../sass/color_blocks-1color.scss */
+#colorBlocks div:nth-child(2):hover {
+  background-color: #ffff14;
+}
+/* line 85, ../sass/color_blocks-1color.scss */
+#colorBlocks div:nth-child(3):hover {
+  background-color: #ffff1e;
+}
+/* line 85, ../sass/color_blocks-1color.scss */
+#colorBlocks div:nth-child(4):hover {
+  background-color: #ffff28;
+}
+/* line 85, ../sass/color_blocks-1color.scss */
+#colorBlocks div:nth-child(5):hover {
+  background-color: #ffff32;
+}
+/* line 85, ../sass/color_blocks-1color.scss */
+#colorBlocks div:nth-child(6):hover {
+  background-color: #ffff3c;
+}
+/* line 85, ../sass/color_blocks-1color.scss */
+#colorBlocks div:nth-child(7):hover {
+  background-color: #ffff46;
+}
+/* line 85, ../sass/color_blocks-1color.scss */
+#colorBlocks div:nth-child(8):hover {
+  background-color: #ffff50;
+}
+
+/* line 93, ../sass/color_blocks-1color.scss */
+#colorBlocks3 div:nth-child(1) {
+  background-color: #3c3cff;
+}
+/* line 93, ../sass/color_blocks-1color.scss */
+#colorBlocks3 div:nth-child(2) {
+  background-color: #4646ff;
+}
+/* line 93, ../sass/color_blocks-1color.scss */
+#colorBlocks3 div:nth-child(3) {
+  background-color: #5050ff;
+}
+/* line 93, ../sass/color_blocks-1color.scss */
+#colorBlocks3 div:nth-child(4) {
+  background-color: #5a5aff;
+}
+/* line 93, ../sass/color_blocks-1color.scss */
+#colorBlocks3 div:nth-child(5) {
+  background-color: #6464ff;
+}
+/* line 93, ../sass/color_blocks-1color.scss */
+#colorBlocks3 div:nth-child(6) {
+  background-color: #6e6eff;
+}
+/* line 93, ../sass/color_blocks-1color.scss */
+#colorBlocks3 div:nth-child(7) {
+  background-color: #7878ff;
+}
+/* line 93, ../sass/color_blocks-1color.scss */
+#colorBlocks3 div:nth-child(8) {
+  background-color: #8282ff;
+}
+/* line 98, ../sass/color_blocks-1color.scss */
+#colorBlocks3 div:nth-child(1):hover {
+  background-color: #d7d70a;
+}
+/* line 98, ../sass/color_blocks-1color.scss */
+#colorBlocks3 div:nth-child(2):hover {
+  background-color: #e1e114;
+}
+/* line 98, ../sass/color_blocks-1color.scss */
+#colorBlocks3 div:nth-child(3):hover {
+  background-color: #ebeb1e;
+}
+/* line 98, ../sass/color_blocks-1color.scss */
+#colorBlocks3 div:nth-child(4):hover {
+  background-color: #f5f528;
+}
+/* line 98, ../sass/color_blocks-1color.scss */
+#colorBlocks3 div:nth-child(5):hover {
+  background-color: #ffff32;
+}
+/* line 98, ../sass/color_blocks-1color.scss */
+#colorBlocks3 div:nth-child(6):hover {
+  background-color: #ffff3c;
+}
+/* line 98, ../sass/color_blocks-1color.scss */
+#colorBlocks3 div:nth-child(7):hover {
+  background-color: #ffff46;
+}
+/* line 98, ../sass/color_blocks-1color.scss */
+#colorBlocks3 div:nth-child(8):hover {
+  background-color: #ffff50;
+}
+
+/* line 106, ../sass/color_blocks-1color.scss */
+#colorBlocks4 div:nth-child(1) {
+  background-color: #6e6eff;
+}
+/* line 106, ../sass/color_blocks-1color.scss */
+#colorBlocks4 div:nth-child(2) {
+  background-color: #7878ff;
+}
+/* line 106, ../sass/color_blocks-1color.scss */
+#colorBlocks4 div:nth-child(3) {
+  background-color: #8282ff;
+}
+/* line 106, ../sass/color_blocks-1color.scss */
+#colorBlocks4 div:nth-child(4) {
+  background-color: #8c8cff;
+}
+/* line 106, ../sass/color_blocks-1color.scss */
+#colorBlocks4 div:nth-child(5) {
+  background-color: #9696ff;
+}
+/* line 106, ../sass/color_blocks-1color.scss */
+#colorBlocks4 div:nth-child(6) {
+  background-color: #a0a0ff;
+}
+/* line 106, ../sass/color_blocks-1color.scss */
+#colorBlocks4 div:nth-child(7) {
+  background-color: #aaaaff;
+}
+/* line 106, ../sass/color_blocks-1color.scss */
+#colorBlocks4 div:nth-child(8) {
+  background-color: #b4b4ff;
+}
+/* line 111, ../sass/color_blocks-1color.scss */
+#colorBlocks4 div:nth-child(1):hover {
+  background-color: #a5a50a;
+}
+/* line 111, ../sass/color_blocks-1color.scss */
+#colorBlocks4 div:nth-child(2):hover {
+  background-color: #afaf14;
+}
+/* line 111, ../sass/color_blocks-1color.scss */
+#colorBlocks4 div:nth-child(3):hover {
+  background-color: #b9b91e;
+}
+/* line 111, ../sass/color_blocks-1color.scss */
+#colorBlocks4 div:nth-child(4):hover {
+  background-color: #c3c328;
+}
+/* line 111, ../sass/color_blocks-1color.scss */
+#colorBlocks4 div:nth-child(5):hover {
+  background-color: #cdcd32;
+}
+/* line 111, ../sass/color_blocks-1color.scss */
+#colorBlocks4 div:nth-child(6):hover {
+  background-color: #d7d73c;
+}
+/* line 111, ../sass/color_blocks-1color.scss */
+#colorBlocks4 div:nth-child(7):hover {
+  background-color: #e1e146;
+}
+/* line 111, ../sass/color_blocks-1color.scss */
+#colorBlocks4 div:nth-child(8):hover {
+  background-color: #ebeb50;
+}
+
+/* line 119, ../sass/color_blocks-1color.scss */
+#colorBlocks5 div:nth-child(1) {
+  background-color: #a0a0ff;
+}
+/* line 119, ../sass/color_blocks-1color.scss */
+#colorBlocks5 div:nth-child(2) {
+  background-color: #aaaaff;
+}
+/* line 119, ../sass/color_blocks-1color.scss */
+#colorBlocks5 div:nth-child(3) {
+  background-color: #b4b4ff;
+}
+/* line 119, ../sass/color_blocks-1color.scss */
+#colorBlocks5 div:nth-child(4) {
+  background-color: #bebeff;
+}
+/* line 119, ../sass/color_blocks-1color.scss */
+#colorBlocks5 div:nth-child(5) {
+  background-color: #c8c8ff;
+}
+/* line 119, ../sass/color_blocks-1color.scss */
+#colorBlocks5 div:nth-child(6) {
+  background-color: #d2d2ff;
+}
+/* line 119, ../sass/color_blocks-1color.scss */
+#colorBlocks5 div:nth-child(7) {
+  background-color: #dcdcff;
+}
+/* line 119, ../sass/color_blocks-1color.scss */
+#colorBlocks5 div:nth-child(8) {
+  background-color: #e6e6ff;
+}
+/* line 124, ../sass/color_blocks-1color.scss */
+#colorBlocks5 div:nth-child(1):hover {
+  background-color: #73730a;
+}
+/* line 124, ../sass/color_blocks-1color.scss */
+#colorBlocks5 div:nth-child(2):hover {
+  background-color: #7d7d14;
+}
+/* line 124, ../sass/color_blocks-1color.scss */
+#colorBlocks5 div:nth-child(3):hover {
+  background-color: #87871e;
+}
+/* line 124, ../sass/color_blocks-1color.scss */
+#colorBlocks5 div:nth-child(4):hover {
+  background-color: #919128;
+}
+/* line 124, ../sass/color_blocks-1color.scss */
+#colorBlocks5 div:nth-child(5):hover {
+  background-color: #9b9b32;
+}
+/* line 124, ../sass/color_blocks-1color.scss */
+#colorBlocks5 div:nth-child(6):hover {
+  background-color: #a5a53c;
+}
+/* line 124, ../sass/color_blocks-1color.scss */
+#colorBlocks5 div:nth-child(7):hover {
+  background-color: #afaf46;
+}
+/* line 124, ../sass/color_blocks-1color.scss */
+#colorBlocks5 div:nth-child(8):hover {
+  background-color: #b9b950;
+}
