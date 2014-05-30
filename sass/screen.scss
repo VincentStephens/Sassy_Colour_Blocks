@@ -19,12 +19,214 @@ body {
     }
 }
 
+h2 {
+    font-size: 0.6em;
+    margin: 0.2em 0; 
+}
+
+#main {
+    max-width:960px;
+    margin: auto;
+}
+
     .button { margin: 1em;}
 
     a {color: #7baedc; text-decoration: none;}
     a:hover {color: #93df7d; }
 
+header {
+    padding: 0.5em;
+    background-color: #fff;
+    margin: 0.5em 0;
+    div.bg-picker { width: 210px; margin-right: 1em; float: left;}
+    div.block-picker { width: 210px; float: left;}
+    div.bg-sample { width: 210px; height: 200px; float: left;}
+    div.b-sample { width: 201px; height: 200px; float: left;}
+}
 
+// - color blocks with css
+
+$borderColor: #C6C6C6;
+$startColor-bg: #a932c7;
+$startColor-b: #3289c7;
+
+
+#colors {
+    z-index: 0;
+    background-color: $startColor-bg;
+    font: {
+        size: 0.4em;
+    }
+}
+
+
+.colorBlock{
+    // Starting colour
+    background-color: $startColor-b;
+    height: 100px;
+    width: 100px;
+    display: block;
+    float: left;
+    border: 0px $borderColor solid;
+    margin: 10px;
+
+    z-index: 10;
+}
+
+@mixin colorBlocks($lighten: 1) {
+    background-color:  $lighten;
+}
+
+// #colorBlocks1 {
+//     @for $i from 1 through 8 {
+//         & div:nth-child(#{$i}) {
+//             @include colorBlocks($i * 10 );
+//         }
+//     }
+// }
+
+#colorBlocks0 {
+    .colorBlock{
+        opacity: 0.1;
+    }
+}
+
+#colorBlocks0 {
+    @for $i from 1 through 8 {
+        & div:nth-child(#{$i}) {
+            @include colorBlocks($i * 10 );
+        }
+    }
+}
+
+#colorBlocks1 {
+    .colorBlock{
+        opacity: 0.2;
+    }
+}
+
+#colorBlocks2 {
+    .colorBlock{
+        opacity: 0.3;
+    }
+}
+
+#colorBlocks3 {
+    .colorBlock{
+        opacity: 0.4;
+    }
+}
+
+#colorBlocks4 {
+    .colorBlock{
+        opacity: 0.5;
+    }
+}
+
+#colorBlocks5 {
+    .colorBlock{
+        opacity: 0.6;
+    }
+}
+
+#colorBlocks6 {
+    .colorBlock{
+        opacity: 0.7;
+    }
+}
+
+#colorBlocks7 {
+    .colorBlock{
+        opacity: 0.8;
+    }
+}
+
+#colorBlocks8 {
+    .colorBlock{
+        opacity: 0.9;
+    }
+}
+
+#colorBlocks9 {
+    .colorBlock{
+        opacity: 1;
+    }
+}
+
+#colorBlocks0 {
+    .colorBlock:hover{
+        -webkit-filter: invert(100%);
+        filter: invert(100%);
+    }
+}
+
+#colorBlocks1 {
+    .colorBlock:hover{
+        -webkit-filter: invert(100%);
+        filter: invert(100%);
+    }
+}
+
+#colorBlocks2 {
+    .colorBlock:hover{
+        -webkit-filter: invert(100%);
+        filter: invert(100%);
+    }
+}
+
+#colorBlocks3 {
+    .colorBlock:hover{
+        -webkit-filter: invert(100%);
+        filter: invert(100%);
+    }
+}
+
+#colorBlocks4 {
+    .colorBlock:hover{
+        -webkit-filter: invert(100%);
+        filter: invert(100%);
+    }
+}
+
+#colorBlocks5 {
+    .colorBlock:hover{
+        -webkit-filter: invert(100%);
+        filter: invert(100%);
+    }
+}
+
+#colorBlocks6 {
+    .colorBlock:hover{
+        -webkit-filter: invert(100%);
+        filter: invert(100%);
+    }
+}
+
+#colorBlocks7 {
+    .colorBlock:hover{
+        -webkit-filter: invert(100%);
+        filter: invert(100%);
+    }
+}
+
+#colorBlocks8 {
+    .colorBlock:hover{
+        -webkit-filter: invert(100%);
+        filter: invert(100%);
+    }
+}
+
+#colorBlocks9 {
+    .colorBlock:hover{
+        -webkit-filter: invert(100%);
+        filter: invert(100%);
+    }
+}
+
+
+@mixin colorBlocksHover($backgroundColor: green, $lighten: 1) {
+    background-color: invert($backgroundColor) + $lighten;
+}
 
 .images {
     position: relative;
@@ -93,7 +295,7 @@ $sidebarHeight: $sidebarBottom + $sidebarTop;
 }
 
 // mixins
-$mainColor: green;
+// $mainColor: green;
 
 @mixin block {
     background-color: $mainColor;
@@ -110,26 +312,6 @@ $mainColor: green;
 $myColor: red;
 $mainBorderSize: 5px;
 
-.block2 {
-    @include block;
-    background-color: $myColor;
-    border: ($mainBorderSize + 10)/2 gray solid;
-}
-
-.block3 {
-    @include block;
-    background-color: $myColor + blue;
-    border: ($mainBorderSize + 10)/2 gray solid;
-}
-
-$gender: girl;
-$genderColor: if($gender == "boy", blue, pink);
-.block4 {
-    @include block; 
-    background-color: gray;
-    color: $genderColor;
-}
-
 //mixins with arguments
 @mixin customBorder($width, $color, $style) {
     border: {
@@ -137,12 +319,6 @@ $genderColor: if($gender == "boy", blue, pink);
         color: $color;
         style: $style;
     }
-}
-
-.block5 {
-    height: 100px;
-    width: 200px;
-    @include customBorder(20px, red, solid);
 }
 
 @mixin paragraphStyles($size, $color, $lineHeight) {
@@ -154,15 +330,6 @@ $genderColor: if($gender == "boy", blue, pink);
     &:first-letter {
         font-size: ($size + 4);
         color: darken($color, 1);
-    }
-}
-
-.block6 {
-    height: auto;
-    width: 500px;
-    @include customBorder(20px, red, solid);
-    p {
-        @include paragraphStyles(1em, blue, 1.3em);
     }
 }
 
@@ -179,18 +346,7 @@ $genderColor: if($gender == "boy", blue, pink);
     }
 }
 
-.block7 {
-    height: auto;
-    width: 500px;
-    @include customBorder(20px, red, solid);
-    p {
-        @include paragraphStyles2;
-    }
-}
-
 // functions
-
-body{background-color: #c1c1c1;}
 
 @mixin blockColor($mainColor: green) {
     background-color: rgba($mainColor, 0.5);
@@ -203,62 +359,4 @@ body{background-color: #c1c1c1;}
     @include blockColor(orange);
     
 }
-
-// - color blocks with css
-
-@mixin colorBlocks($backgroundColor: green, $lighten: 1) {
-    background-color: $backgroundColor + $lighten;
-}
-
-$borderColor: gray;
-
-.colorBlock{
-    height: 100px;
-    width: 100px;
-    display: block;
-    float: left;
-    border: 3px $borderColor solid;
-}
-
-
-#colorBlocks {
-    @for $i from 1 through 8 {
-        & div:nth-child(#{$i}) {
-            @include colorBlocks(green, $i * 10 );
-        }
-    }
-}
-
-@mixin colorBlocksHover($backgroundColor: green, $lighten: 1) {
-    background-color: invert($backgroundColor) + $lighten;
-}
-
-
-#colorBlocks2 {
-    // @for $i from 1 through 8 {
-    //     & div:nth-child(#{$i}) {
-    //         @include colorBlocks(green, $i * 10 );
-    //     }
-    // }
-    @for $i from 1 through 8 {
-        & div:nth-child(#{$i}):hover {
-            @include colorBlocksHover(green, $i * 10 );
-        }
-    }
-}
-
-#colorBlocks3 {
-    @for $i from 1 through 8 {
-        & div:nth-child(#{$i}) {
-            @include colorBlocks(yellow, $i * 10 );
-        }
-    }
-    @for $i from 1 through 8 {
-        & div:nth-child(#{$i}):hover {
-            @include colorBlocksHover(yellow, $i * 10 );
-        }
-    }
-}
-
-
 
