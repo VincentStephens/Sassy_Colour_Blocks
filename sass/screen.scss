@@ -14,11 +14,17 @@
 //property nesting
 body {
     font: {
-    family: Arial;
-    size: 1rem;
+    family: 'Open Sans', serif;
     weight: 100;
     }
 }
+
+    .button { margin: 1em;}
+
+    a {color: #7baedc; text-decoration: none;}
+    a:hover {color: #93df7d; }
+
+
 
 .images {
     position: relative;

@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, ../../../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,127 +24,142 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
 
 /* line 15, ../sass/screen.scss */
 body {
-  font-family: Arial;
-  font-size: 1rem;
+  font-family: 'Open Sans', serif;
   font-weight: 100;
 }
 
-/* line 23, ../sass/screen.scss */
+/* line 22, ../sass/screen.scss */
+.button {
+  margin: 1em;
+}
+
+/* line 24, ../sass/screen.scss */
+a {
+  color: #7baedc;
+  text-decoration: none;
+}
+
+/* line 25, ../sass/screen.scss */
+a:hover {
+  color: #93df7d;
+}
+
+/* line 29, ../sass/screen.scss */
 .images {
   position: relative;
   display: block;
 }
 
-/* line 27, ../sass/screen.scss */
+/* line 33, ../sass/screen.scss */
 img[src$=".jpg"] {
   border: solid 1px white;
 }
 
-/* line 30, ../sass/screen.scss */
+/* line 36, ../sass/screen.scss */
 img[src$=".jpg"]:hover {
   border: solid 1px red;
 }
 
-/* line 34, ../sass/screen.scss */
+/* line 40, ../sass/screen.scss */
 .b {
   display: none;
   position: absolute;
 }
 
-/* line 38, ../sass/screen.scss */
+/* line 44, ../sass/screen.scss */
 .a {
   position: absolute;
 }
 
-/* line 41, ../sass/screen.scss */
+/* line 47, ../sass/screen.scss */
 .a:hover + .b {
   display: block;
 }
 
-/* line 46, ../sass/screen.scss */
+/* line 52, ../sass/screen.scss */
 .headingSelector > h1 {
   color: green;
 }
 
-/* line 50, ../sass/screen.scss */
+/* line 56, ../sass/screen.scss */
 .headingSelector > div h1 {
   color: blue;
 }
 
-/* line 54, ../sass/screen.scss */
+/* line 60, ../sass/screen.scss */
 .headingSelector2 p + h1 {
   color: orange;
 }
 
-/* line 58, ../sass/screen.scss */
+/* line 64, ../sass/screen.scss */
 h2:target {
   background-color: yellow;
 }
 
-/* line 73, ../sass/screen.scss */
+/* line 79, ../sass/screen.scss */
 .sidebar {
   padding: 1rem;
   background-color: green;
   width: 250px;
   height: 13rem;
 }
-/* line 79, ../sass/screen.scss */
+/* line 85, ../sass/screen.scss */
 .sidebar .sidebarTop {
   height: 5rem;
   background-color: #00b300;
 }
-/* line 83, ../sass/screen.scss */
+/* line 89, ../sass/screen.scss */
 .sidebar .sidebarBottom {
   height: 8rem;
   background-color: #00e600;
 }
 
-/* line 99, ../sass/screen.scss */
+/* line 105, ../sass/screen.scss */
 .block1 {
   background-color: green;
   height: 100px;
@@ -152,7 +167,7 @@ h2:target {
   border: solid 1px black;
 }
 
-/* line 107, ../sass/screen.scss */
+/* line 113, ../sass/screen.scss */
 .block2 {
   background-color: green;
   height: 100px;
@@ -162,7 +177,7 @@ h2:target {
   border: 7.5px gray solid;
 }
 
-/* line 113, ../sass/screen.scss */
+/* line 119, ../sass/screen.scss */
 .block3 {
   background-color: green;
   height: 100px;
@@ -172,7 +187,7 @@ h2:target {
   border: 7.5px gray solid;
 }
 
-/* line 121, ../sass/screen.scss */
+/* line 127, ../sass/screen.scss */
 .block4 {
   background-color: green;
   height: 100px;
@@ -182,7 +197,7 @@ h2:target {
   color: pink;
 }
 
-/* line 136, ../sass/screen.scss */
+/* line 142, ../sass/screen.scss */
 .block5 {
   height: 100px;
   width: 200px;
@@ -191,7 +206,7 @@ h2:target {
   border-style: solid;
 }
 
-/* line 154, ../sass/screen.scss */
+/* line 160, ../sass/screen.scss */
 .block6 {
   height: auto;
   width: 500px;
@@ -199,19 +214,19 @@ h2:target {
   border-color: red;
   border-style: solid;
 }
-/* line 158, ../sass/screen.scss */
+/* line 164, ../sass/screen.scss */
 .block6 p {
   font-size: 1em;
   font-color: blue;
   font-line-height: 1.3em;
 }
-/* line 148, ../sass/screen.scss */
+/* line 154, ../sass/screen.scss */
 .block6 p:first-letter {
   font-size: 5em;
   color: #0000fa;
 }
 
-/* line 176, ../sass/screen.scss */
+/* line 182, ../sass/screen.scss */
 .block7 {
   height: auto;
   width: 500px;
@@ -219,24 +234,24 @@ h2:target {
   border-color: red;
   border-style: solid;
 }
-/* line 180, ../sass/screen.scss */
+/* line 186, ../sass/screen.scss */
 .block7 p {
   font-size: 1em;
   font-color: orange;
   font-line-height: 1em;
 }
-/* line 170, ../sass/screen.scss */
+/* line 176, ../sass/screen.scss */
 .block7 p:first-letter {
   font-size: 5em;
   color: #996300;
 }
 
-/* line 187, ../sass/screen.scss */
+/* line 193, ../sass/screen.scss */
 body {
   background-color: #c1c1c1;
 }
 
-/* line 196, ../sass/screen.scss */
+/* line 202, ../sass/screen.scss */
 .block8 {
   background-color: rgba(255, 165, 0, 0.5);
   height: 100px;
@@ -244,7 +259,7 @@ body {
   border: solid 1px black;
 }
 
-/* line 209, ../sass/screen.scss */
+/* line 215, ../sass/screen.scss */
 .colorBlock {
   height: 100px;
   width: 100px;
@@ -253,133 +268,133 @@ body {
   border: 3px gray solid;
 }
 
-/* line 220, ../sass/screen.scss */
+/* line 226, ../sass/screen.scss */
 #colorBlocks div:nth-child(1) {
   background-color: #0a8a0a;
 }
-/* line 220, ../sass/screen.scss */
+/* line 226, ../sass/screen.scss */
 #colorBlocks div:nth-child(2) {
   background-color: #149414;
 }
-/* line 220, ../sass/screen.scss */
+/* line 226, ../sass/screen.scss */
 #colorBlocks div:nth-child(3) {
   background-color: #1e9e1e;
 }
-/* line 220, ../sass/screen.scss */
+/* line 226, ../sass/screen.scss */
 #colorBlocks div:nth-child(4) {
   background-color: #28a828;
 }
-/* line 220, ../sass/screen.scss */
+/* line 226, ../sass/screen.scss */
 #colorBlocks div:nth-child(5) {
   background-color: #32b232;
 }
-/* line 220, ../sass/screen.scss */
+/* line 226, ../sass/screen.scss */
 #colorBlocks div:nth-child(6) {
   background-color: #3cbc3c;
 }
-/* line 220, ../sass/screen.scss */
+/* line 226, ../sass/screen.scss */
 #colorBlocks div:nth-child(7) {
   background-color: #46c646;
 }
-/* line 220, ../sass/screen.scss */
+/* line 226, ../sass/screen.scss */
 #colorBlocks div:nth-child(8) {
   background-color: #50d050;
 }
 
-/* line 238, ../sass/screen.scss */
+/* line 244, ../sass/screen.scss */
 #colorBlocks2 div:nth-child(1):hover {
   background-color: #ff89ff;
 }
-/* line 238, ../sass/screen.scss */
+/* line 244, ../sass/screen.scss */
 #colorBlocks2 div:nth-child(2):hover {
   background-color: #ff93ff;
 }
-/* line 238, ../sass/screen.scss */
+/* line 244, ../sass/screen.scss */
 #colorBlocks2 div:nth-child(3):hover {
   background-color: #ff9dff;
 }
-/* line 238, ../sass/screen.scss */
+/* line 244, ../sass/screen.scss */
 #colorBlocks2 div:nth-child(4):hover {
   background-color: #ffa7ff;
 }
-/* line 238, ../sass/screen.scss */
+/* line 244, ../sass/screen.scss */
 #colorBlocks2 div:nth-child(5):hover {
   background-color: #ffb1ff;
 }
-/* line 238, ../sass/screen.scss */
+/* line 244, ../sass/screen.scss */
 #colorBlocks2 div:nth-child(6):hover {
   background-color: #ffbbff;
 }
-/* line 238, ../sass/screen.scss */
+/* line 244, ../sass/screen.scss */
 #colorBlocks2 div:nth-child(7):hover {
   background-color: #ffc5ff;
 }
-/* line 238, ../sass/screen.scss */
+/* line 244, ../sass/screen.scss */
 #colorBlocks2 div:nth-child(8):hover {
   background-color: #ffcfff;
 }
 
-/* line 246, ../sass/screen.scss */
+/* line 252, ../sass/screen.scss */
 #colorBlocks3 div:nth-child(1) {
   background-color: #ffff0a;
 }
-/* line 246, ../sass/screen.scss */
+/* line 252, ../sass/screen.scss */
 #colorBlocks3 div:nth-child(2) {
   background-color: #ffff14;
 }
-/* line 246, ../sass/screen.scss */
+/* line 252, ../sass/screen.scss */
 #colorBlocks3 div:nth-child(3) {
   background-color: #ffff1e;
 }
-/* line 246, ../sass/screen.scss */
+/* line 252, ../sass/screen.scss */
 #colorBlocks3 div:nth-child(4) {
   background-color: #ffff28;
 }
-/* line 246, ../sass/screen.scss */
+/* line 252, ../sass/screen.scss */
 #colorBlocks3 div:nth-child(5) {
   background-color: #ffff32;
 }
-/* line 246, ../sass/screen.scss */
+/* line 252, ../sass/screen.scss */
 #colorBlocks3 div:nth-child(6) {
   background-color: #ffff3c;
 }
-/* line 246, ../sass/screen.scss */
+/* line 252, ../sass/screen.scss */
 #colorBlocks3 div:nth-child(7) {
   background-color: #ffff46;
 }
-/* line 246, ../sass/screen.scss */
+/* line 252, ../sass/screen.scss */
 #colorBlocks3 div:nth-child(8) {
   background-color: #ffff50;
 }
-/* line 251, ../sass/screen.scss */
+/* line 257, ../sass/screen.scss */
 #colorBlocks3 div:nth-child(1):hover {
   background-color: #0a0aff;
 }
-/* line 251, ../sass/screen.scss */
+/* line 257, ../sass/screen.scss */
 #colorBlocks3 div:nth-child(2):hover {
   background-color: #1414ff;
 }
-/* line 251, ../sass/screen.scss */
+/* line 257, ../sass/screen.scss */
 #colorBlocks3 div:nth-child(3):hover {
   background-color: #1e1eff;
 }
-/* line 251, ../sass/screen.scss */
+/* line 257, ../sass/screen.scss */
 #colorBlocks3 div:nth-child(4):hover {
   background-color: #2828ff;
 }
-/* line 251, ../sass/screen.scss */
+/* line 257, ../sass/screen.scss */
 #colorBlocks3 div:nth-child(5):hover {
   background-color: #3232ff;
 }
-/* line 251, ../sass/screen.scss */
+/* line 257, ../sass/screen.scss */
 #colorBlocks3 div:nth-child(6):hover {
   background-color: #3c3cff;
 }
-/* line 251, ../sass/screen.scss */
+/* line 257, ../sass/screen.scss */
 #colorBlocks3 div:nth-child(7):hover {
   background-color: #4646ff;
 }
-/* line 251, ../sass/screen.scss */
+/* line 257, ../sass/screen.scss */
 #colorBlocks3 div:nth-child(8):hover {
   background-color: #5050ff;
 }
