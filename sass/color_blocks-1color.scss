@@ -5,16 +5,6 @@ $mainColor: blue;
 //caculate base colors
 $borderColor: mix($mainColor, #cdcdcd);
 
-body {
-    font: {
-    family: Arial;
-    size: 1rem;
-    weight: 100;
-    }
-    background-color: #cdcdcd;
-}
-
-
 // mixins
 
 // set up block styles
