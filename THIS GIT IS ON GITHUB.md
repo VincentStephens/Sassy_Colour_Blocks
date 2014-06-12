@@ -4,10 +4,8 @@ THIS GIT IS ON GITHUB
 
 - New ftp details added to ftploy
 
-<<<<<<< HEAD
 - Retrying to deploy via ftploy
 
 - 2nd Attempt at ftploy
-=======
-- Retrying to deploy via ftploy
->>>>>>> origin/First
+
+
